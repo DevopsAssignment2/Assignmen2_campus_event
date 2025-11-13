@@ -1,11 +1,12 @@
 {
-  "devDependencies": {
-    "parcel": "^2.16.1"
-  },
   "name": "devops_assignment2",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "scripts": {
+    "start": "parcel src/index.html --port 3000",
+    "build": "parcel build src/index.html --dist-dir dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "ansi-styles": "^4.3.0",
     "base-x": "^3.0.11",
@@ -58,10 +59,8 @@
     "utility-types": "^3.11.0",
     "weak-lru-cache": "^1.2.2"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "parcel src/index.html --port 3000",
-  "build": "parcel build src/index.html --dist-dir dist"
+  "devDependencies": {
+    "parcel": "^2.16.1"
   },
   "keywords": [],
   "author": "",
